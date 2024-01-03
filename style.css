@@ -121,40 +121,39 @@ button:active {
     }
 
     button {
-        font-size: 5vh;
-        width: 12vh;
-        height: 12vh;
+        font-size: 3.34vh;
+        width: 8vh;
+        height: 8vh;
         border: none;
-        border-radius: 6vh;
+        border-radius: 4vh;
         background-color: #313131;
         color: white;
     }
     .bigButtons {
-        width: 27vh;
-        border-radius: 6vh;
+        width: 18vh;
+        border-radius: 4vh;
     }
     .operatorButtons {
-        font-size: 7vh;
+        font-size: 4.67vh;
     }
     #Buttons {
-        width: 60vh;
+        width: 100vh;
     }
 
     #middleButtons {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 6vw;
+        grid-template-columns: repeat(4, 0.1fr);
+        column-gap: 0.5vw;
         padding-top: 7px;
-        padding-left: 10px;
-        padding-right: 10px;
     }
     
     .threeButtons {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 7vw;
+        grid-template-columns: repeat(3, 0.125fr);
+        column-gap: 0.583vw;
         padding-top: 7px;
-        padding-left: 10px;
-        padding-right: 10px;
+    }
+    #zero {
+        margin-right: 3vw;
     }
 }
