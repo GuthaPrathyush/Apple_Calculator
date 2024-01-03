@@ -5,7 +5,7 @@ function clearDisplay() {
 }
 
 function operatorKey(key) {
-    return (key === "+" || key === "-" || key === "/" || key === "*" || key === "%");
+    return (key === "+" || key === "-" || key === "/" || key === "*" || key === "%" || key === ".");
 }
 function appendDisplay(key) {
     if((display.value==="0" && !operatorKey(key)) || display.value==="Syntax Error" || display.value==="Undefined" || display.value==="∞") {
@@ -43,6 +43,11 @@ function calculate() {
         display.style.fontSize = "2rem";
         display.value = "Syntax Error";
     }
+}
+
+function deleteDisplay() {
+    let v = String(display.value);
+    display.value = v.substring(0, v.length-1);
 }
 
 function handleInput() {
