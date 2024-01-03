@@ -1,6 +1,7 @@
 * {
     margin: none;
     border: none;
+    color: white;
 }
 body {
     background-color: #616161;
@@ -65,7 +66,7 @@ button:active {
 }
 #middleButtons {
     display: grid;
-    grid-template-columns: repeat(4, 1.34fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 7px;
     padding-top: 7px;
     padding-left: 10px;
@@ -120,7 +121,7 @@ button:active {
     }
 
     button {
-        font-size: 1.3rem;
+        font-size: 5vh;
         width: 12vh;
         height: 12vh;
         border: none;
@@ -132,7 +133,28 @@ button:active {
         width: 27vh;
         border-radius: 6vh;
     }
+    .operatorButtons {
+        font-size: 7vh;
+    }
     #Buttons {
         width: 60vh;
+    }
+
+    #middleButtons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 6vw;
+        padding-top: 7px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .threeButtons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 7vw;
+        padding-top: 7px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
