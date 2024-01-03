@@ -1,0 +1,120 @@
+* {
+    margin: none;
+    border: none;
+}
+body {
+    background-color: #616161;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button {
+    font-size: 1.3rem;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: #313131;
+    color: white;
+}
+
+button:active {
+    background-color: #ababab;
+}
+
+.Calculator {
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#display {
+    width: 90%;
+    padding-right: 10px;
+    background-color: black;
+    color: white;
+    height: 20%;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow:unset;
+}
+
+#display input{
+    width: 100%;
+    text-align: right;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 3rem;
+    outline: none;
+}
+
+
+
+#Buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#middleButtons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.threeButtons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.bigButtons {
+    width: 112.5px;
+}
+
+.specialButtons {
+    background-color: #a8a4a4;
+}
+
+.specialButtons:active {
+    background-color: #333333;
+}
+
+.operatorButtons {
+    background-color: #ff9c0c;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.operatorButtons:active {
+    background-color: #ffce84;
+}
+
+@media screen and (max-width: 414px) {
+    body {
+        background-color: black;
+    }
+    .Calculator {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
